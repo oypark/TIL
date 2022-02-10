@@ -1,9 +1,9 @@
 # Today I Learned
 * 데이터 분석으로 어떤 것들을 할 수 있을까?
 * 다양한 아이디어의 효과적이고 효율적인 실현을 위해 분석 hard skill을 갈고 닦을 필요가 있다.
-* 하루동안 학습한 내용과 각종 분야의 domain 지식들을 기록으로 남기고 스스로 동기부여와 성취감을 재고한다.
+* 하루동안 학습한 내용과 각종 분야의 domain 지식들을 기록으로 남기고, 스스로 동기부여한다.
 
-    [namjunemy](https://github.com/namjunemy/TIL#%EB%B6%84%EB%A5%98)님의 TIL을 참고하여 작성하였다.
+    ([namjunemy](https://github.com/namjunemy/TIL#%EB%B6%84%EB%A5%98)님의 TIL을 참고하여 작성하였다.)
 
 ## 작성 규칙
 * 폴더명과 파일명은 영문으로 작성한다.
