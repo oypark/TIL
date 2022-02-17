@@ -12,8 +12,33 @@
 * 많은 사람들에게 공유를 원하는 내용은 [블로그](https://ok-iee.tistory.com/)에 포스팅한다. 📑
 * 매일 기록하는 것에 연연하지 않고, 초심자의 마음으로 꾸준히 기록한다.
 
-## 분류
-### Git
+# 분류
+
+## Git
 * []()
-### Python
+
+## Python
+
+### 학내 교과목
+* [Business Programming(Basic Python)]()
+* [Business Anlaytics(Project)]()
+
+### 서비스 산업 데이터 활용 빅데이터 교육 by 멀티캠퍼스
+#### 메인 강의
+* [Python]()
+* [Machine Learning]()
+* [Statistic Natural Language Processing]()
+* [Deep Learning]()
+
+#### 온라인 강의 by 멀티캠퍼스
 * []()
+
+#### 팀별 프로젝트
+* [Visualization mini project]()
+* [Dacon_Predict moviegoers]()
+
+### 개인 프로젝트
+* [카카오톡 대화방 분석]()
+
+
+
