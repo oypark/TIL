@@ -15,7 +15,8 @@
 # 분류
 
 ## Git
-* []()
+* [Git 특강](https://github.com/oypark/TIL/tree/master/git-special-lecture)
+* [Git 오류 tip]()
 
 ## Python
 
