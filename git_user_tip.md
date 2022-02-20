@@ -1,10 +1,13 @@
 # 목차
 
-[1. 오류](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-%EC%98%A4%EB%A5%98)
-  [(1) LF 오류해결](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-lf-%EC%98%A4%EB%A5%98%ED%95%B4%EA%B2%B0)
+[**1. 오류**](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-%EC%98%A4%EB%A5%98)
 
-[2. Git User Tip](https://github.com/oypark/TIL/blob/master/git_user_tip.md#2-git-user-tip)
-  [(1) .gitignore](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-gitignore)
+   [(1) LF 오류해결](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-lf-%EC%98%A4%EB%A5%98%ED%95%B4%EA%B2%B0)
+
+
+[**2. Git User Tip**](https://github.com/oypark/TIL/blob/master/git_user_tip.md#2-git-user-tip)
+
+   [(1) .gitignore](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-gitignore)
 
 
 
