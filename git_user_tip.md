@@ -1,3 +1,17 @@
+# 목차
+
+[1. 오류](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-%EC%98%A4%EB%A5%98)
+  [(1) LF 오류해결](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-lf-%EC%98%A4%EB%A5%98%ED%95%B4%EA%B2%B0)
+
+[2. Git User Tip](https://github.com/oypark/TIL/blob/master/git_user_tip.md#2-git-user-tip)
+  [(1) .gitignore](https://github.com/oypark/TIL/blob/master/git_user_tip.md#1-gitignore)
+
+
+
+---
+
+
+
 # 1. 오류
 
 ### (1) LF 오류해결
@@ -40,11 +54,11 @@
   ```
 
   * `core.autocrlf = true` : CRLF 를 `LF 로 변경`
-  * ``core.autocrlf = false` : 플랫폼(OS) 상관없이 줄바꿈에 대한 `문자열 그대로 인식`해 저장 (문제발생 가능성 존재)
+  * `core.autocrlf = false` : 플랫폼(OS) 상관없이 줄바꿈에 대한 `문자열 그대로 인식`해 저장 (문제발생 가능성 존재)
   * `core.autocrlf = input` : `LF`를 line ending으로 사용
 
 
-
+---
 
 
 # 2. Git User Tip
@@ -62,12 +76,15 @@
   > ```bash
   > ## .gitignore 파일 생성
   > touch .gitignore
-  > 
+  > ```
+  > ```bash
   > # .gitignore 파일에 원하는 파일 형식 입력, 저장 후 add-commit-push 진행
   > git add .
-  > 
-  > git commit -m "make .gitignore file"
-  > 
+  > ```
+  > ```bash
+  > git commit -m ".gitignore is now working!"
+  > ```
+  > ```bash
   > git push origin master
   > ```
 
@@ -78,11 +95,14 @@
   > ```bash
   > ## removes all cached instances of the unwanted files
   > git rm -r --cached .
-  > 
+  > ```
+  > ```bash
   > git add .
-  > 
+  > ```
+  > ```bash
   > git commit -m ".gitignore is now working!"
-  > 
+  > ```
+  > ```bash
   > git push origin master
   > ```
   >
