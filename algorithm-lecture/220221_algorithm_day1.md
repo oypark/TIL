@@ -239,12 +239,72 @@
 
 
 
-
 # 3. 문자열(string)
 
-## 1) 
+* 들어가기전...
 
-=> 화면녹화 보고 필기하기 ★
+  * 문자열은 **immutable(변경 불가능한)** 자료형이다!!!
+
+  * 예시
+
+    ```python
+    word = "apple"     # word 객체에 "apple"이 할당됨
+    print(word)       # "apple" 출력
+    
+    
+    word += "banana"    # word 객체에 "banana" 더해줌
+    print(word)      # "apple banana" 출력 <- 기존의 "apple"은 그대로 있고, word 객체가 "apple banana"라는 새로운 문자열을 참조하도록 바뀜!
+    ```
+
+
+
+## 1) 문자열 슬라이싱(Slicing)
+
+* `문자열[start:end:step]`
+
+* 예시
+
+  ```  python
+  s = 'abcdefghi'
+  
+  s[2:5]    #'cde', 5-1까지 조회
+  s[-6:-2]   #'defg',  -6부터 -2-1까지 조회
+  s[2:-4]    #'cde',   2부터 -4-1까지 조회
+  
+  s[2:5:2]    #'ce', 2는 step(하나 찾고 얼마나 건너뛸지?==2)
+  s[-6:-1:-3]    #'dg'
+  s[2:5:-1]    #'',  step에 -1을 쓰면 반대방향으로 조회됨, 따라서 지금은 1이라고 써야함
+  s[5:2:-1]    #'fed', 5->2는 뒤->앞(반대방향)이므로 fed가 출력됨
+  
+  s[:3]    #'abc', start 생략(==0부터 시작)
+  s[5:]    #'fghi', finish 생략(==len(s)로 끝)
+  s[:]     #'abcdefghi', 전체 출력(처음부터 끝까지)
+  s[::-1]    #'ihgfedcba', 처음부터 끝까지 뒤->앞으로 출력(==문자열 뒤집기★)
+  s[10:20]    #'', 에러가 나지 않음(왜? 아래에 정리)
+  ```
+
+  > * `'example'[3:4]` and `'example'[3]` are fundamentally different, and <u>slicing outside the bounds of a sequence</u> (at least for built-ins) <u>doesn't cause an error.</u>
+  >
+  > Indexing returns a single item, but <u>slicing returns a subsequence of items</u>. So when you try to index a nonexistent value, there's nothing to return. But <u>when you slice a sequence outside of bounds, you can still return an empty sequence</u>.
+  >
+  > Part of what's confusing here is that strings behave a little differently from lists. <u>Look what happens when you do the same thing to a list</u>:
+  >
+  > ```python
+  > >>> [0, 1, 2, 3, 4, 5][3]
+  > 3
+  > >>> [0, 1, 2, 3, 4, 5][3:4]
+  > [3]
+  > ```
+  >
+  > from stackoverflow [#9490058](https://stackoverflow.com/questions/9490058/why-does-substring-slicing-with-index-out-of-range-work/42680568#42680568)
+  >
+  > + The exact semantics(문맥, 의미) fo slicing outside the range of a sequence ▼
+  >
+  > Given a slice expression like `s[i:j:k]`. The slice of *s* from *i* to *j* with step *k* is defined as the sequence of items with index `x = i + n*k` such that `0 <= n < (j-i)/k`. In other words, the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when *j* is reached (but never including *j*) *<u>**When \*k\* is positive, \*i\* and \*j\* are reduced to `len(s)` if they are greater**</u>*
+  >
+  > if you write `s[999:9999]`, python is returning `s[len(s):len(s)]` since `len(s) < 999` and your step is positive (`1` -- the default).
+  >
+  > [documentation ref.](https://docs.python.org/2/library/stdtypes.html#sequence-types-str-unicode-list-tuple-bytearray-buffer-xrange)
 
 
 
@@ -265,4 +325,9 @@
     * 삽입 대상 문자열 자리에 <u>리스트나 튜플</u>도 가능
     * 공백 출력, 콤마 출력 등 원하는 출력 모양에 사용가능
 
-  
+
+
+
+## 3) 아스키코드
+
+* 이건 수업에서 다루지 않을 예정! (나중에 따로 찾아서 해보기)
