@@ -1,3 +1,11 @@
+# 0. 세줄 요약
+
+1. Input을 넣었을 때 Output이라는 목적을 만들기 위한 중간과정이  `Algorithm(==Code)`이다. (취업 때문에 해야하는 것!)
+
+2. input() 함수에 `한 줄, 문자열`로 Input을 넣고, print() 함수로 `end, sep`을 조절해 Output을 받는다.
+
+3. Algorithm을 작성하기 위해서는 자료구조`(list, set, dict, string, stack, que, hash, ...`)를 알아야한다.
+
 
 
 # 1. 들어가기에 앞서
