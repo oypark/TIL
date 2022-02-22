@@ -33,7 +33,6 @@ while i < length:
         i = i+3
     else:
         i += 1
-    
     count += 1
 
 print(count)
