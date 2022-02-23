@@ -14,11 +14,11 @@
 
 # 분류
 
-## Git
+## 1. Git
 * [Git 특강](https://github.com/oypark/TIL/tree/master/git-special-lecture)
 * [Git 오류 tip](https://github.com/oypark/TIL/blob/master/git_user_tip.md)
 
-## Python
+## 2. Python
 
 ### 학내 교과목
 * [Business Programming(Basic Python)]()
@@ -41,5 +41,13 @@
 ### 개인 프로젝트
 * [카카오톡 대화방 분석]()
 
+
+## 3. SQL
+
+### SQLD
+* MySQL 실습
+
+### Programmers
+* SQL 고득점 Kit
 
 
