@@ -1,5 +1,6 @@
 ## 강사님 코드
 
+# 효율성을 위해 함수를 사용한다! (return이 일찍되면 더 일찍 멈추도록!)
 def find_palindrome(k, words):
     # words에 있는 단어 들을 두 개씩 조합하는 경우의 수
     for i in range(k - 1):
