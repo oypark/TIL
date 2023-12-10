@@ -19,7 +19,7 @@ for n in range(n):
 lh_dict = sorted(lh_dict.items())
 l_list = [k for (k, v) in lh_dict]
 h_list = [v for (k, v) in lh_dict]
-dist_l_dist = [l - l_list[:-1][i] for i, l in enumerate(l_list[1:])]
+dist_l_list = [l - l_list[:-1][i] for i, l in enumerate(l_list[1:])]
 dist_h_list = [h - h_list[:-1][i] for i, h in enumerate(h_list[1:])]
 max_h_idx = h_list.index(max_h)
 
@@ -46,10 +46,15 @@ for j, h in enumerate(h_list):
     else:
         if dist_h_list[j-1] < 0:
             square = dist_l_list[j-1] * h
+            print(j, dist_l_list[j-1], h)
             sum_garage += square
         else:
-            square = (dist_l_list[j-2] + dist_l_list[j-1]) * h - (dist_l_list[j-2] * h_list[j-1])
-            sum_garage += square
+            square_large = (dist_l_list[j-2] + dist_l_list[j-2]) * h
+            print(j, dist_l_list[j-2], dist_l_list[j-2], h, square_large)
+            square_small = (dist_l_list[j-2] * h_list[j-1])
+            print(j, dist_l_list[j-2], h_list[j-1], square_small)
+            sum_garage += square_large
+            sum_garage -= square_small
+            
 
 print(sum_garage)
-
